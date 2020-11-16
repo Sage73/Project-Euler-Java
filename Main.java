@@ -9,17 +9,12 @@ public class Main {
 
     public static void main(String[] args) {
 	// Project euler (Problem 1)
-        Scanner sc = new Scanner(System.in);
-        System.out.println("default: 1000");
-        System.out.print("Find the sum of all the multiples of 3 or 5 below: ");
-        int threshold = sc.nextInt();
-        sc.close();
 
         List<Integer> multiplesOf3 = new ArrayList<Integer>();
         List<Integer> multiplesOf5 = new ArrayList<Integer>();
 
         //check if is multiple of 3 or 5
-        for (int i = 1; i < threshold; i++) {
+        for (int i = 1; i < 10; i++) { // change the 1000 into threshold that you want
             if (i % 5 == 0) {
                 multiplesOf5.add(i);
             } else if (i % 3 == 0) {
@@ -34,6 +29,6 @@ public class Main {
         // merge the 2 lists
         int result = sumOf3 + sumOf5;
 
-        System.out.println(result);
+        System.out.println("Problem 1: " + result);
     }
 }
