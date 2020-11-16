@@ -14,7 +14,7 @@ public class Main {
         List<Integer> multiplesOf5 = new ArrayList<Integer>();
 
         //check if is multiple of 3 or 5
-        for (int i = 1; i < 10; i++) { // change the 1000 into threshold that you want
+        for (int i = 1; i < 1000; i++) { // change the 1000 into threshold that you want
             if (i % 5 == 0) {
                 multiplesOf5.add(i);
             } else if (i % 3 == 0) {
