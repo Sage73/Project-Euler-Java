@@ -39,6 +39,11 @@ public class Problem2 {
                 evenFibNums.add(fibonacciNum);
             }
         }
-        System.out.println(evenFibNums);
+        int sum = 0;
+        for (Integer num:
+             evenFibNums) {
+            sum += num;
+        }
+        System.out.println("Problem 2: " + sum);
     }
 }
