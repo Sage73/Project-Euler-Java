@@ -32,6 +32,13 @@ public class Problem2 {
             fibNums.add(0, a);
             fibNums.add(1, b);
         }
-        System.out.println(fibNums);
+        ArrayList<Integer> evenFibNums = new ArrayList<>();
+        for (Integer fibonacciNum:
+             fibNums) {
+            if (fibonacciNum % 2 == 0) {
+                evenFibNums.add(fibonacciNum);
+            }
+        }
+        System.out.println(evenFibNums);
     }
 }
