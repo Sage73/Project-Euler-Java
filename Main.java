@@ -37,5 +37,7 @@ public class Main {
         // Importing all other classes
         Problem2.main(args);
         Problem3.main(args);
+
+        Test.main(args);
     }
 }
