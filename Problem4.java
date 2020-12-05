@@ -5,8 +5,7 @@ public class Problem4 {
         //A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
         //Find the largest palindrome made from the product of two 3-digit numbers.
 
-        int product, copy, reverse = 0;
-        boolean found = false;
+        int product, copy, reverse = 0, max = 0;
         for (int i = 999; i >= 1; i--) {
             for (int j = 999; j >= 1 ; j--) {
                 product = i * j;
@@ -17,14 +16,13 @@ public class Problem4 {
                     product = product/10;
                 }
                 if (copy == reverse) {
-                    System.out.println("the largest palindromic number with 3 digits is: " + copy);
-                    System.out.println("It's the product of " + i + "*" + j);
-                    found = true;
+                    if (copy > max) {
+                        max = copy;
+                    }
                 }
                 reverse = 0;
-                break;
             }
-            if (found) break;
         }
+        System.out.println("the largest palindromic is: " + max);
     }
 }
