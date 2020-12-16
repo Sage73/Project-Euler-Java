@@ -10,7 +10,7 @@ public class Problem5 {
             for (int i = 1; !found; i++) {
                 for (int j = 1; j <= 20; j++) {
                     if (j == 20) {
-                        System.out.println(i);
+                        System.out.println("problem 5: " + i);
                         found = true;
                     } else if (i % j != 0) {
                         break;

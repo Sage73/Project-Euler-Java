@@ -15,6 +15,6 @@ public class Problem3 {
             }
         }
         primeFactors.add(num);
-        System.out.println(primeFactors);
+        System.out.println("problem 3: " + primeFactors);
     }
 }

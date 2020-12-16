@@ -23,6 +23,6 @@ public class Problem4 {
                 reverse = 0;
             }
         }
-        System.out.println("the largest palindromic is: " + max);
+        System.out.println("problem 4: " + max);
     }
 }
