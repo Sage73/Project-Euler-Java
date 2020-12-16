@@ -38,6 +38,7 @@ public class Main {
         Problem2.main(args);
         Problem3.main(args);
         Problem4.main(args);
+        Problem5.main(args);
 
         Test.main(args);
     }
