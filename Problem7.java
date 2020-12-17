@@ -24,5 +24,6 @@ public class Problem7 {
                 }
             }
         }
+        System.out.println(primes.get(primes.size() - 1));
     }
 }
