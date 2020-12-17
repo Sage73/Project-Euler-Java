@@ -23,6 +23,6 @@ public class Problem6 {
         int squareOfSum = (int) Math.pow(sum, 2);
 
         int result = squareOfSum - sumOfSquare;
-        System.out.println(result);
+        System.out.println("Problem 6: " + result);
     }
 }
