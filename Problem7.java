@@ -20,7 +20,6 @@ public class Problem7 {
                     primes.add(i);
                     if (primes.size() >= 10_001) {
                         found = true;
-                        System.out.println(primes);
                     }
                 }
             }
