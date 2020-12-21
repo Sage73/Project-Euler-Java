@@ -51,10 +51,11 @@ public class Problem8 {
             }
 
             if (result > max) {
-                max = Long.parseLong(fourDigits);
+                max = result;
             }
             start++;
             end++;
+            result = 1;
         }
         System.out.println(max);
     }
